@@ -4,6 +4,8 @@ Bellabeat data analysis case study . In this case study, I will perform many rea
 
 # Tools
 --> SQL(Data Exploration,Data Manipualtion)
+
+
 --> EXCEL (Data Visualization)
 
 
