@@ -12,7 +12,7 @@ Bellabeat data analysis case study . In this case study, I will perform many rea
 # Business Questions:
 
 1) Finding numbers of users in Bella beat using different datasets ?
-2) To find the relationship calories and total stpes ?
+2) To find the relationship calories and total steps ?
 3) To find and analyze relation between total step and sedentary minutes ?
 4) Examine the active and sedentary minutes inn daliy part of life of users ?
 5) Calculation of the most active week day on average ?
