@@ -1,15 +1,15 @@
-# Google_Capstone_Project
+# :chart_with_upwards_trend: Google_Capstone_Project :chart_with_upwards_trend:
 This is capstone project for analaysis the data from company to analyze and conclude the result in order to data driven decision. 
 Bellabeat data analysis case study . In this case study, I will perform many real-world tasks of a junior data analyst. In this secanrio I am  working for Bellabeat, a high-tech manufacturer of health-focused products for women, and meet different characters and team members. In order to answer the key business questions, you will follow the steps of the data analysis process: ask, prepare, process, analyze, share, and act. 
 
-# Tools
+# :paperclip: Tools
 --> **SQL**(Data Exploration,Data Manipualtion)
 
 
 --> **EXCEL**(Data Visualization)
 
 
-# Business Questions:
+# :paperclip: Business Questions:
 
 1) Finding numbers of users in Bella beat using different datasets ?
 2) To find the relationship calories and total steps ?
@@ -18,7 +18,7 @@ Bellabeat data analysis case study . In this case study, I will perform many rea
 5) Calculation of the most active week day on average ?
 6) Find the realtion between average sleep on weekdays?
 
-# Dataset Information:-
+# :paperclip: Dataset Information:-
 In this phase, I viewed all **18 files and decided to use 6 of the 18 files from datasets** that are available to help with my analysis. The datasets chosen will be the following:
 
 • dailyActivity_merged.csv
@@ -34,16 +34,16 @@ In this phase, I viewed all **18 files and decided to use 6 of the 18 files from
 I applied a dual approach, leveraging both Excel and SQL, to perform comprehensive data analysis. Each table, seamlessly imported from the original dataset, bore nomenclature consistent with its counterpart in the source dataset. In the cleaning phase, I adeptly employed both Excel and SQL to refine data types, meticulously configuring datetime fields to exclusively house date information or be tailored specifically to capture time (or activity hours).
 
 
-# SQL Code(Data Manipualtion and Analysis)
+# :paperclip: SQL Code(Data Manipualtion and Analysis)
 
 
-**# Count Number Of Unquie User In FitBand According To Following Activities--**
+:paperclip:  Count Number Of Unquie User In FitBand According To Following Activities--
 
 
 I have use a distinct command with count to known if there are unique values are there in each column.
 
 
-**CODE**
+:paperclip:CODE**
 
 
     use fitband;
@@ -62,14 +62,14 @@ I have use a distinct command with count to known if there are unique values are
 
     SELECT Count(distinct ID)  FROM heart_rate;
 
-**OUTPUT-**
+**🔑 OUTPUT-**
 
 ![Screen Shot 2024-04-11 at 11 29 11 PM](https://github.com/Sumit-Baviskar/Google_capstone_project/assets/153518735/f932480e-99fa-452c-89bf-eec88b5da883)
 
 
 The analysis highlights a noticeable trend: daily activity, daily calories, daily intensities, and daily steps gain more user attention, whereas daily steps, sleep data, and weight log information have fewer users engaged.
 
-**Recommendation:**
+# :key: Recommendation:
 In response to user preferences, it is recommended to focus product efforts on refining and expanding features related to daily activities, calorie tracking, intensity monitoring, and step counts. Strengthening these aspects could lead to increased sales and heightened user satisfaction.
 
 ----------------------------------------------------------------------------------------------------------------------
@@ -77,7 +77,7 @@ In response to user preferences, it is recommended to focus product efforts on r
 Cleaning the data for with the value zero and only analysis the values with non-zero summation of all three columns activity level and calories burnt
 
 
-**CODE**
+**:paperclip:CODE** 
 
 
     Select *
@@ -90,13 +90,13 @@ Cleaning the data for with the value zero and only analysis the values with non-
 
     Order BY TotalSteps Desc;
 
-**OUTPUT--**
+**🔑 OUTPUT--**
 
 ![Screen Shot 2024-04-11 at 11 30 35 PM](https://github.com/Sumit-Baviskar/Google_capstone_project/assets/153518735/8a8c0559-f0ea-4f59-98c7-c33848792c41)
 
 In the provided SQL code, data for the least active members are cleaned by removing entries of individuals with columns such as Very Active Distance, Moderately Active Distance, Light Active Distance, Very Active Minutes, Fairly Active Minutes, and Lightly Active Minutes having values of zero.Taking the dataset into excel for further data visualization and forming scatter chart from the dataset.
 
-**GRAPH-**
+**🔑 GRAPH-**
 
 ![Screen Shot 2024-04-11 at 11 30 51 PM](https://github.com/Sumit-Baviskar/Google_capstone_project/assets/153518735/4f8db0af-d668-471c-9e4e-e14352e135fd)
 
@@ -107,7 +107,7 @@ To engage with users whose calorie intake is higher, suggestions for active and 
 
 **# For finding activity level and calories burnt---**
 
-**CODE**
+**:paperclip:CODE**
 
 
     SELECT Id, ActivityDate,Calories, TotalSteps,
@@ -126,13 +126,13 @@ To engage with users whose calorie intake is higher, suggestions for active and 
 
     ORDER BY  Total_Active_Distance DESC;
 
-**OUTPU--**
+**🔑 OUTPUT--**
 
 ![Screen Shot 2024-04-11 at 11 31 29 PM](https://github.com/Sumit-Baviskar/Google_capstone_project/assets/153518735/20de7713-8065-48d2-96e4-06f24e8b4577)
 
 To derive insights, we aggregated data on the least active and less sedentary minutes, combining them with sedentary minutes for a direct comparison with total steps. Our analysis reveals a negative relationship: an increase in sedentary minutes corresponds to a decrease in total steps (active minutes). This correlation is visually represented by a downward-trending line, underscoring the consistent decline in total steps as sedentary minutes rise.
 
-**GRAPH-**
+**🔑 GRAPH-**
 
 ![Screen Shot 2024-04-11 at 11 31 54 PM](https://github.com/Sumit-Baviskar/Google_capstone_project/assets/153518735/54d1723e-5cd8-4fc2-9613-3acaf2e25bfa)
 
@@ -146,7 +146,7 @@ User should be notified for Taking Regular Breaks while siting for that send not
 
 **# Calcuate Time Spent On Activity Per Day**
 
-**CODE**
+**:paperclip:CODE**
 
     SELECT Distinct Id, SUM(SedentaryMinutes) as sedentary_minutes,
 
@@ -160,11 +160,11 @@ User should be notified for Taking Regular Breaks while siting for that send not
 
     GROUP BY Id;
 
-**OUTPUT--**
+**🔑 OUTPUT--**
 
 ![Screen Shot 2024-04-11 at 11 32 18 PM](https://github.com/Sumit-Baviskar/Google_capstone_project/assets/153518735/e0d77511-8b39-4f21-9f4e-6151e71f00d1)
 
-**GRAPH--**
+**🔑 GRAPH--**
 
 ![Screen Shot 2024-04-11 at 11 32 31 PM](https://github.com/Sumit-Baviskar/Google_capstone_project/assets/153518735/b0139f4a-b3c9-4d4a-ab72-39b27f49741a)
 
@@ -175,7 +175,7 @@ As seen here, the majority of users using the Bellabeat product spend more time 
 
 **# Calculation Of Most Active Weekday (On Average)**
 
-**CODE**
+**:paperclip:CODE**
 
     use fitband;
 
@@ -193,7 +193,7 @@ As seen here, the majority of users using the Bellabeat product spend more time 
 
 **# Add day_0f_week column on daily_activities**
 
-**CODE**
+**:paperclip:CODE**
 
     use fitband;
 
@@ -206,7 +206,7 @@ As seen here, the majority of users using the Bellabeat product spend more time 
 
 **# To Extract Day Of Week From Date **
 
-**CODE**
+**:paperclip:CODE**
 
     UPDATE daily_activity
 
@@ -219,7 +219,7 @@ As seen here, the majority of users using the Bellabeat product spend more time 
 
 we are calculating the average of total steps, total distance, calories from the table grouping by day of week.
 
-**CODE**
+**:paperclip: CODE**
 
     Select AVG(TotalSteps) as avg_steps,
     
@@ -233,7 +233,7 @@ we are calculating the average of total steps, total distance, calories from the
    
     Group By  Day_of_Week;
 
-**OUTPUT--**
+**🔑 OUTPUT--**
 
 ![Screen Shot 2024-04-11 at 11 32 41 PM](https://github.com/Sumit-Baviskar/Google_capstone_project/assets/153518735/0c113efd-40d5-4e67-8abf-5f301de86e5e)
 
@@ -246,14 +246,14 @@ After examining the data, a noticeable pattern emerges regarding the average tot
 
 ![Screen Shot 2024-04-11 at 11 34 24 PM](https://github.com/Sumit-Baviskar/Google_capstone_project/assets/153518735/4cbd01df-f81e-4b9e-ae4c-f71a1210954b)
 
-**Recommendation:**
+# 🔑 Recommendation:**
 To boost activity on less active days, consider increasing notifications to motivate users. Furthermore, on days with higher activity levels, introducing notifications related to nutritious eating habits and reminders for adequate hydration could be valuable additional features.
 
 ----------------------------------------------------------------------------------------------------------------------------
 
 **# To reverse the setting, you can use the following command:**
 
-**CODE**
+**:paperclip: CODE**
   
     SET SQL_SAFE_UPDATES = 1;
 
@@ -264,7 +264,7 @@ To boost activity on less active days, consider increasing notifications to moti
 
 we are taking the date from string formating the date from sleep_day table
 
-**CODE**
+**:paperclip:CODE**
    
     SET SQL_SAFE_UPDATES = 0;
 
@@ -281,7 +281,7 @@ we are taking the date from string formating the date from sleep_day table
 
 Data Manipukation and transformation-- adding a new column day of week.
 
-**CODE**
+**:paperclip:CODE**
 
      Alter Table sleep_day
 
@@ -293,7 +293,7 @@ Data Manipukation and transformation-- adding a new column day of week.
 
 To extract the day name of the date from sleepday from the sleep_day table
 
-**CODE**
+**:paperclip: CODE**
 
     UPDATE sleep_day
    
@@ -301,11 +301,11 @@ To extract the day name of the date from sleepday from the sleep_day table
 
 ----------------------------------------------------------------------------------------------------------------------------
 
-**# extracting the data**
+**:paperclip:extracting the data**
 
 We are extracting week of the day or dayname and rounding of the average of Total Minutes Asleep from table and groupin by day.
 
-**CODE**
+**:paperclip:CODE**
 
     Select day_of_week,round(avg(TotalMinutesAsleep), 0) AS Avg_Sleep
    
@@ -313,21 +313,21 @@ We are extracting week of the day or dayname and rounding of the average of Tota
    
     Group By day_of_week;
 
-**OUTPUT--**
+**🔑 OUTPUT--**
 
 ![Screen Shot 2024-04-11 at 11 34 34 PM](https://github.com/Sumit-Baviskar/Google_capstone_project/assets/153518735/73ad309e-0f56-4c13-ad24-45312dd7cfc2)
 
-**GRAPH**
+**🔑 GRAPH**
 
 ![Screen Shot 2024-04-11 at 11 34 42 PM](https://github.com/Sumit-Baviskar/Google_capstone_project/assets/153518735/3d4a029d-569a-4fd9-8bd7-e53e8d0c90b8)
 
-**Recommendation:**
+**🔑 Recommendation:**
 
 After analyzing the data, it's evident that Sunday, Thursday, and Monday emerge as the least active days of the week. This trend translates to increased sedentary time and decreased active time, potentially hindering individuals from reaching their set fitness goals in a timely manner. Addressing strategies to boost activity on these specific days may contribute significantly to overall goal achievement.
 
 ----------------------------------------------------------------------------------------------------------------------------
 
-# Trends Identified:
+# 🔑 Trends Identified:
 
 1)Low Activity on Sundays:
 
@@ -337,13 +337,13 @@ After analyzing the data, it's evident that Sunday, Thursday, and Monday emerge 
 
 4)There is a potential correlation between sleep quality and daily activity levels.
 
-# Application to Bellabeat Customers:
+# 🔑 Application to Bellabeat Customers:
 
 1) Sunday Activity Targeting: Encourage Bellabeat users to boost their activity on Sundays through targeted reminders and incentives.Provide personalized challenges or rewards to motivate increased step count on Sundays.
 
 2) Sleep Enhancement Features:Enhance sleep tracking features to highlight the connection between sleep quality and daily activity.Educate users on the benefits of being more active during the day for improved sleep.
 
-# Influence on Bellabeat Marketing Strategy:
+# 🔑 Influence on Bellabeat Marketing Strategy:
 
 1)Sunday-Specific Campaigns:Develop marketing campaigns that specifically target Sundays, emphasizing the importance of staying active on this day.Utilize social media, in-app notifications, and email campaigns to deliver these messages.
 
@@ -353,7 +353,7 @@ After analyzing the data, it's evident that Sunday, Thursday, and Monday emerge 
 
 
 
-# (Suggestion for marketing team)
+# 🔑 (Suggestion for marketing team)
 
 1) Promote Physical Activity on Inactive Days:-Encourage higher levels of physical activity, especially on less active days such as Sundays.
  
