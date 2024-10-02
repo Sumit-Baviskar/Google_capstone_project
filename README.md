@@ -357,7 +357,7 @@ After analyzing the data, it's evident that Sunday, Thursday, and Monday emerge 
 
 1) Promote Physical Activity on Inactive Days:-Encourage higher levels of physical activity, especially on less active days such as Sundays.
  
-2)Highlight the Link Between Physical Activity and Improved Sleep:-Increase awareness about the positive correlation between regular physical activity and enhanced sleep    quality.
+2) Highlight the Link Between Physical Activity and Improved Sleep:-Increase awareness about the positive correlation between regular physical activity and enhanced sleep    quality.
 
 3) Adding new features :-Bellabeat has the opportunity to amplify its sleep tracking feature by emphasizing the correlation between sleep quality and daily activity levels.
 
