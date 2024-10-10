@@ -362,7 +362,7 @@ We are extracting week of the day or dayname and rounding of the average of Tota
 
 ![Screen Shot 2024-04-11 at 11 34 42 PM](https://github.com/Sumit-Baviskar/Google_capstone_project/assets/153518735/3d4a029d-569a-4fd9-8bd7-e53e8d0c90b8)
 
-🔑 **Recommendation:**
+🔑 **Recommendation :**
 
 After analyzing the data, it's evident that Sunday, Thursday, and Monday emerge as the least active days of the week. This trend translates to increased sedentary time and decreased active time, potentially hindering individuals from reaching their set fitness goals in a timely manner. Addressing strategies to boost activity on these specific days may contribute significantly to overall goal achievement.
 
